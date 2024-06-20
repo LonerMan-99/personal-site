@@ -14,6 +14,10 @@ type requestEmail = {
 };
 
 const ModalContentEmail = (props: Props) => {
+ const serviceKey = process.env.SERVICE_KEY || "";
+ const templateKey = process.env.TEMPLATE_KEY || "";
+ const userKey = process.env.USER_KEY || "";
+
  const [formData, setFormData] = useState<requestEmail>({
   from_name: "",
   from_email: "",
@@ -37,29 +41,22 @@ const ModalContentEmail = (props: Props) => {
    ...formData,
   };
 
-  emailjs
-   .send(
-    "service_nzipnsk",
-    "template_4fdk8i6",
-    templateParams,
-    "40cIuR45nLk3z7Geb"
-   )
-   .then(
-    () => {
-     setFormData({
-      from_name: "",
-      from_email: "",
-      to_name: "Wildan",
-      message: "",
-     });
-     setIsLoading(false);
-     alert("Email success to sent.");
-    },
-    (error) => {
-     alert(error);
-     setIsLoading(false);
-    }
-   );
+  emailjs.send(serviceKey, templateKey, templateParams, userKey).then(
+   () => {
+    setFormData({
+     from_name: "",
+     from_email: "",
+     to_name: "Wildan",
+     message: "",
+    });
+    setIsLoading(false);
+    alert("Email success to sent.");
+   },
+   (error) => {
+    alert(error);
+    setIsLoading(false);
+   }
+  );
  };
 
  return (
