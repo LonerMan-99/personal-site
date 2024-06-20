@@ -1,0 +1,11 @@
+.techstack-field {
+ font-size: 13px;
+ line-height: 20px;
+}
+
+.field {
+ height: 120px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}

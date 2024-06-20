@@ -1,0 +1,28 @@
+.Modal-contacts {
+ display: flex;
+ gap: 40px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: 0 auto;
+ width: fit-content;
+}
+
+.divider {
+ border: 1px solid black;
+ height: 30px;
+}
+
+.linkedin {
+    color: black;
+    font-size: 14px;
+}
+
+.email{
+    cursor: pointer;
+}

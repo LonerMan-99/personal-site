@@ -1,0 +1,17 @@
+.icon-button-container {
+ font-size: 7.5px;
+ font-family: px_sans_nouveaux;
+ line-height: 12px;
+ color: rgba(255, 255, 255, 0.8);
+ box-sizing: border-box;
+ text-align: center;
+ vertical-align: top;
+ width: 72px;
+ cursor: pointer !important;
+ margin-bottom: 15px;
+ transition: transform 0.3s ease;
+}
+
+.icon-button-container:hover {
+ transform: scale(1.1);
+}

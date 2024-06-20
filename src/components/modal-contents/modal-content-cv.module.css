@@ -1,0 +1,19 @@
+.Modal-cv-container {
+ display: flex;
+ gap: 12px;
+ width: 100%;
+ height: 100%;
+}
+
+.Modal-cv-preview {
+ width: fit-content;
+ height: 100%;
+}
+
+.Modal-cv-button {
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ padding: 8px;
+}

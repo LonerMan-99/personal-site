@@ -1,0 +1,8 @@
+@font-face {
+ font-family: "px_sans_nouveaux";
+ src: url("/fonts/px_sans_nouveaux.woff2") format("woff2"),
+  url("/fonts/px_sans_nouveaux.woff") format("woff");
+ /* Add more src definitions if necessary (e.g., for different formats) */
+ font-weight: normal;
+ font-style: normal;
+}

@@ -1,0 +1,27 @@
+.form-email-container{
+    border: 1px dashed black;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 30px;
+    margin-top: 10px;
+}
+
+.form-email{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-email-button{
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px;
+}
+
+.form-email-button-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

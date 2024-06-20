@@ -1,0 +1,32 @@
+.Music-playlist {
+ margin-top: 10px;
+}
+
+.Music-playlist-button {
+ margin: 4px;
+ cursor: pointer;
+}
+
+.Music-player {
+ margin-top: 10px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.Music-player-button {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+}
+
+.Music-player-slide {
+ width: 100%;
+}
+
+.Music-player-times{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
